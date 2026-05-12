@@ -1,0 +1,65 @@
+/*
+ * embedded_utils_flags.h
+ *
+ *  Created on: 11 may. 2026
+ *      Author: Ludo
+ */
+
+#ifndef __EMBEDDED_UTILS_FLAGS_H__
+#define __EMBEDDED_UTILS_FLAGS_H__
+
+#include "sdm_flags.h"
+#include "usart.h"
+#include "version.h"
+
+/*** Embedded utility functions compilation flags ***/
+
+#define EMBEDDED_UTILS_HW_INTERFACE_ERROR_BASE_LAST     USART_ERROR_BASE_LAST
+
+#ifdef SDM_MODE_CLI
+#define EMBEDDED_UTILS_AT_BAUD_RATE                     9600
+#define EMBEDDED_UTILS_AT_REPLY_END                     "\r\n"
+#define EMBEDDED_UTILS_AT_FORCE_OK
+#define EMBEDDED_UTILS_AT_INTERNAL_COMMANDS_ENABLE
+#define EMBEDDED_UTILS_AT_COMMANDS_LIST_SIZE            32
+#define EMBEDDED_UTILS_AT_BUFFER_SIZE                   64
+#ifdef EMBEDDED_UTILS_AT_INTERNAL_COMMANDS_ENABLE
+#define EMBEDDED_UTILS_AT_BOARD_NAME                    "sigfox_device_motherboard"
+#ifdef HW1_0
+#define EMBEDDED_UTILS_AT_HW_VERSION_MAJOR              1
+#define EMBEDDED_UTILS_AT_HW_VERSION_MINOR              0
+#endif
+#ifdef HW1_1
+#define EMBEDDED_UTILS_AT_HW_VERSION_MAJOR              1
+#define EMBEDDED_UTILS_AT_HW_VERSION_MINOR              1
+#endif
+#define EMBEDDED_UTILS_AT_SW_VERSION_MAJOR              GIT_MAJOR_VERSION
+#define EMBEDDED_UTILS_AT_SW_VERSION_MINOR              GIT_MINOR_VERSION
+#define EMBEDDED_UTILS_AT_SW_VERSION_INDEX              GIT_COMMIT_INDEX
+#define EMBEDDED_UTILS_AT_SW_VERSION_DIRTY_FLAG         GIT_DIRTY_FLAG
+#define EMBEDDED_UTILS_AT_SW_VERSION_ID                 GIT_COMMIT_ID
+#endif
+#else
+#define EMBEDDED_UTILS_AT_DRIVER_DISABLE
+#endif
+
+#define EMBEDDED_UTILS_ERROR_STACK_DEPTH                32
+#define EMBEDDED_UTILS_ERROR_STACK_SUCCESS_VALUE        0
+#define EMBEDDED_UTILS_ERROR_STACK_SIGFOX
+
+#define EMBEDDED_UTILS_MATH_PRECISION                   0
+//#define EMBEDDED_UTILS_MATH_COS_TABLE
+//#define EMBEDDED_UTILS_MATH_SIN_TABLE
+//#define EMBEDDED_UTILS_MATH_ATAN2
+
+#define EMBEDDED_UTILS_STRING_HEXADECIMAL_UPPER_CASE
+
+#ifdef SDM_MODE_CLI
+#define EMBEDDED_UTILS_TERMINAL_INSTANCES_NUMBER        1
+#else
+#define EMBEDDED_UTILS_TERMINAL_INSTANCES_NUMBER        0
+#endif
+#define EMBEDDED_UTILS_TERMINAL_BUFFER_SIZE             64
+//#define EMBEDDED_UTILS_TERMINAL_MODE_BUS
+
+#endif /* __EMBEDDED_UTILS_FLAGS_H__ */

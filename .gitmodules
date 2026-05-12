@@ -1,0 +1,30 @@
+[submodule "stm32l0xx-device"]
+    path = drivers/device/stm32l0xx-device
+    url = https://github.com/Ludovic-Lesur/stm32l0xx-device.git
+[submodule "stm32l0xx-registers"]
+    path = drivers/registers/stm32l0xx-registers
+    url = https://github.com/Ludovic-Lesur/stm32l0xx-registers.git
+[submodule "stm32l0xx-drivers"]
+    path = drivers/peripherals/stm32l0xx-drivers
+    url = https://github.com/Ludovic-Lesur/stm32l0xx-drivers.git
+[submodule "embedded-utils"]
+    path = drivers/utils/embedded-utils
+    url = https://github.com/Ludovic-Lesur/embedded-utils.git
+[submodule "lis2dh12-driver"]
+    path = drivers/components/lis2dh12-driver
+    url = https://github.com/Ludovic-Lesur/lis2dh12-driver.git
+[submodule "aht2x-driver"]
+    path = drivers/components/aht2x-driver
+    url = https://github.com/Ludovic-Lesur/aht2x-driver.git
+[submodule "ltr329-driver"]
+    path = drivers/components/ltr329-driver
+    url = https://github.com/Ludovic-Lesur/ltr329-driver.git
+[submodule "s2lp-driver"]
+    path = drivers/components/s2lp-driver
+    url = https://github.com/Ludovic-Lesur/s2lp-driver.git
+[submodule "sigfox-ep-lib"]
+    path = middleware/sigfox/sigfox-ep-lib
+    url = https://github.com/sigfox-tech-radio/sigfox-ep-lib.git
+[submodule "sigfox-ep-addon-rfp"]
+    path = middleware/sigfox/sigfox-ep-addon-rfp
+    url = https://github.com/sigfox-tech-radio/sigfox-ep-addon-rfp.git
