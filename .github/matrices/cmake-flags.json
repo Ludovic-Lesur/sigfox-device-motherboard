@@ -1,0 +1,17 @@
+{
+    "hw_configuration_list": [
+        {
+            "hw_flags": {
+                "SDM_HW_VERSION": "HW1_0"
+            },
+            "sw_configuration_list": [
+                {
+                    "name": "cli",
+                    "sw_flags": {
+                        "SDM_MODE_CLI": "ON"
+                    }
+                }
+            ]
+        }
+    ]
+}
