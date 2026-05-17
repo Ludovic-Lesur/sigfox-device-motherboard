@@ -2,7 +2,7 @@
 
 The **Sigfox Device Motherboard** is a generic radio platform which can be used in various remote applications using **Sigfox long-range connectivity**.
 
-The design is an original mix between an evolutive development board and a finished product: multiple GPIOs can be used to extend the board capabilities, while the 80x50mm form factor and its embedded PCB antenna are suited for a final integration. The BOM can also be adjusted according to the targetted use-case.
+The design is an original mix between an evolutive **development board** and a **finished product**: multiple GPIOs can be used to extend the board capabilities, while the 80x50mm form factor and its embedded PCB antenna are suited for a final integration. The BOM can also be adjusted according to the targetted use-case.
 
 The board embeds the following features:
 
@@ -11,7 +11,7 @@ The board embeds the following features:
 * **I2C interface** to connect additionnal sensors.
 * **HMI** including an RGB LED, a push button and a radio indicator (top or bottom mounted).
 * Multiple **power configurations**: coin cells, secondary battery with solar charging or USB connector.
-* **External power switch** to control an external module.
+* **External power switch** to control an external circuit.
 * **Low power transceiver** with **PCB antenna** or UFL connector.
 
 # Hardware
@@ -22,7 +22,7 @@ The board was designed on **Circuit Maker V2.0**. Below is the list of hardware 
 
 | Hardware revision | Description | `cmake_hw_version` | Status |
 |:---:|:---:|:---:|:---:|
-| [SDM HW1.0](https://365.altium.com/files/42D89E56-8F99-44A0-8EC9-BADE76D3B536) | Initial version. | `HW1_0` | :white_check_mark: |
+| [SDM HW1.0](https://365.altium.com/files/42D89E56-8F99-44A0-8EC9-BADE76D3B536) | Initial version. | `HW1_0` | :hammer: |
 
 ## Architecture
 
