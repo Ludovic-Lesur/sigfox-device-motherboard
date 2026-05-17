@@ -466,7 +466,7 @@ RF_API_status_t RF_API_init(RF_API_radio_parameters_t* radio_parameters) {
     s2lp_status = S2LP_send_command(S2LP_COMMAND_SRES);
     S2LP_stack_exit_error(ERROR_BASE_S2LP, (RF_API_status_t) RF_API_ERROR_DRIVER_S2LP);
     // Oscillator.
-    s2lp_status = S2LP_set_oscillator(S2LP_OSCILLATOR_TCXO);
+    s2lp_status = S2LP_set_oscillator(S2LP_OSCILLATOR_QUARTZ);
     S2LP_stack_exit_error(ERROR_BASE_S2LP, (RF_API_status_t) RF_API_ERROR_DRIVER_S2LP);
     s2lp_status = S2LP_wait_for_oscillator();
     S2LP_stack_exit_error(ERROR_BASE_S2LP, (RF_API_status_t) RF_API_ERROR_DRIVER_S2LP);
