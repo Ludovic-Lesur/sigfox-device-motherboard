@@ -15,6 +15,7 @@
  * \brief NVM address mapping.
  *******************************************************************/
 typedef enum {
+    // Sigfox library.
     NVM_ADDRESS_SIGFOX_EP_ID = 0,
     NVM_ADDRESS_SIGFOX_EP_KEY = (NVM_ADDRESS_SIGFOX_EP_ID + SIGFOX_EP_ID_SIZE_BYTES),
     NVM_ADDRESS_SIGFOX_EP_LIB_DATA = (NVM_ADDRESS_SIGFOX_EP_KEY + SIGFOX_EP_KEY_SIZE_BYTES),
